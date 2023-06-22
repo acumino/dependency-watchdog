@@ -52,7 +52,7 @@ import (
 	v113 "k8s.io/client-go/kubernetes/typed/rbac/v1"
 	v1alpha15 "k8s.io/client-go/kubernetes/typed/rbac/v1alpha1"
 	v1beta113 "k8s.io/client-go/kubernetes/typed/rbac/v1beta1"
-	v1alpha16 "k8s.io/client-go/kubernetes/typed/resource/v1alpha1"
+	v1alpha16 "k8s.io/client-go/kubernetes/typed/resource/v1alpha2"
 	v114 "k8s.io/client-go/kubernetes/typed/scheduling/v1"
 	v1alpha17 "k8s.io/client-go/kubernetes/typed/scheduling/v1alpha1"
 	v1beta114 "k8s.io/client-go/kubernetes/typed/scheduling/v1beta1"
