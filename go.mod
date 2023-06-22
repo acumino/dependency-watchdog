@@ -2,8 +2,6 @@ module github.com/gardener/dependency-watchdog
 
 go 1.20
 
-exclude k8s.io/client-go v11.0.1-0.20190409021438-1a26190bd76a+incompatible
-
 require (
 	github.com/gardener/gardener v1.69.0
 	github.com/go-logr/logr v1.2.4
@@ -114,4 +112,7 @@ require (
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 )
 
-replace github.com/gardener/gardener => github.com/acumino/gardener v1.32.1-0.20230622225944-df6baab021ad
+replace (
+	github.com/gardener/etcd-druid => github.com/acumino/etcd-druid v0.7.1-0.20230622225417-3630be9b1e54
+	github.com/gardener/gardener => github.com/acumino/gardener v1.32.1-0.20230622231029-ab73356e72ea
+)
