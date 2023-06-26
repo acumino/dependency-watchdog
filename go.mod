@@ -2,6 +2,8 @@ module github.com/gardener/dependency-watchdog
 
 go 1.20
 
+exclude k8s.io/client-go v11.0.1-0.20190409021438-1a26190bd76a+incompatible
+
 require (
 	github.com/gardener/gardener v1.69.0
 	github.com/go-logr/logr v1.2.3
@@ -12,7 +14,7 @@ require (
 	go.uber.org/zap v1.24.0
 	k8s.io/api v0.26.2
 	k8s.io/apimachinery v0.26.2
-	k8s.io/client-go v11.0.1-0.20190409021438-1a26190bd76a+incompatible
+	k8s.io/client-go v0.26.2
 	k8s.io/code-generator v0.26.2
 	k8s.io/utils v0.0.0-20221128185143-99ec85e7a448
 	sigs.k8s.io/controller-runtime v0.14.5
@@ -109,5 +111,3 @@ require (
 	sigs.k8s.io/json v0.0.0-20220713155537-f223a00ba0e2 // indirect
 	sigs.k8s.io/structured-merge-diff/v4 v4.2.3 // indirect
 )
-
-replace k8s.io/client-go => k8s.io/client-go v0.26.2
